@@ -1,0 +1,256 @@
+@charset "ISO-8859-1";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+	background-color: #F4D58D;
+	color: #BF0603;
+	text-align: center;
+	margin: 0;
+	height: 100%;
+	font-family: Helvetica;
+}
+
+.header {
+	background-color: #708D81;
+	margin: 0;
+	padding-top: 10px;
+	font-size: 30px;
+}
+
+.nav-bar {
+	display: flex;
+	background-color: #708D81;
+	color: #BF0603;
+	width: 100%;
+}
+
+button {
+	color: #BF0603;
+	font-size: 20px;
+	padding: 3px;
+	margin: 0px 7px;
+	cursor: pointer;
+}
+
+#funds {
+	margin-left: auto;
+	margin-right: 5px;
+	font-size: 20px;
+}
+
+#funds_rate {
+	font-size: 20px;
+	margin-right: 10px;
+}
+
+.table {
+	display: block;
+	width: 90%;
+	margin-left: 5%;
+}
+
+ul {
+	list-style: none;
+	margin: 5px;  
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #F4D58D;
+}
+
+.table-element, .table-spacer {
+	height: 60px;
+	width: 60px;
+	margin: 2px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid; 
+	background-color: #F4D58D;
+	font-size: 25px;
+}
+
+.element-top {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	font-size: 12px;
+}
+
+.element-amount, .element-production {
+	margin: 1px 4px;
+}
+
+.element-middle {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	font-size: 24px;
+}
+
+.element-bottom {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	font-size: 12px;
+}
+
+#element-info {
+	background-color: #708D81;
+}
+
+#element-info-amount, #element-info-production {
+	font-size: 50px;
+	margin: 5px 15px;
+}
+
+#element-info-abrev {
+	font-size: 100px;
+}
+
+#element-info-price {
+	font-size: 50px;
+}
+
+#copper, #sulfur, #silver, #tin, #antimony, #gold, #mercury, #lead {
+	background-color: #708D81;
+	font-size: 25px;
+	cursor: pointer;
+}
+
+.table-spacer {
+	background-color: #F4D58D;
+	border: 2px solid #F4D58D;
+}
+
+.element-top, .element-bottom , .upgrade {
+	display: none;
+}
+
+#copper .element-top, #copper .element-bottom, #sulfur .element-top, #sulfur .element-bottom,
+#silver .element-top, #silver .element-bottom, #tin .element-top, #tin .element-bottom,
+#antimony .element-top, #antimony .element-bottom, #gold .element-top, #gold .element-bottom,
+#mercury .element-top, #mercury .element-bottom, #lead .element-top, #lead .element-bottom,
+#element-info .element-top, #element-info .element-bottom  {
+	display: flex;
+}
+
+#info, #research, #upgrades {
+	display: flex;
+	align-items: center;
+	justify-content: center;	
+	flex-direction: column;
+	margin-top: 30px;
+}
+
+.upgrade {
+	width: 30%;
+}
+
+#research-amounts-display {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;	
+	flex-direction: row;
+}
+
+#research-points-display, #scientists-display, #buy-scientist {
+	font-size: 25px;
+	background-color: #708D81;
+	border: 2px solid #BF0603;
+	margin: 5px;
+	padding: 3px;
+}
+
+#buy-scientist {
+	cursor: pointer;
+}
+
+#research-packs, #upgrades-display {
+	display: flex;
+	align-items: start;
+	justify-content: space-around;	
+	flex-direction: row;
+	width: 50%;
+}
+
+#new-elements, #new-upgrades, #new-compounds {
+	display: flex;
+	align-items: center;
+	justify-content: center;	
+	flex-direction: column;
+	width: 30%;
+	height: 100%;
+	font-size: 20px;
+}
+
+.research-purchase , .upgrade {
+	background-color: #708D81;
+	border: 2px solid #BF0603;
+	margin: 3px;
+	padding: 5px;
+	cursor: pointer;
+}
+
+#straight-chain-alkanes {
+	display: none;
+}
+
+.info-row {
+	display: flex;
+	align-items: center;
+	justify-content: center;	
+	width: 65%;
+	font-size: 18px;
+}
+
+#element-info {
+	height: 250px;
+	width: 250px;
+}
+
+#element-explaination {
+	margin-left: 30px;
+	width: 40%;
+}
+
+#sample-research {
+	flex-wrap: wrap;
+	margin-top: 20px;
+}
+
+.research-info-column {
+	width: 33%;
+	margin-top: 10px;
+}
+
+#reseach-info-intro {
+	width: 100%;
+}
+
+/* REMOVE */
+#cheat_button { 
+	margin-top: 100px;
+	border: 2px solid #BF0603;
+}
+
+/* MUST STAY AT BOTTOM */
+#research, #upgrades, #info, #playtesting {
+	display: none;
+}
